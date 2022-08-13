@@ -15,14 +15,14 @@ pipeline{
         }
         stage('DEPLOY'){
             steps{
-                echo "This is a build stage"
+                echo "This is a Deploy stage"
                 
             }
             
         }
         stage('TESTING1'){
             steps{
-                sh 'echo "This is a build stage"'
+                sh 'echo "This is a Testing1 stage"'
             }
 
             
@@ -30,7 +30,7 @@ pipeline{
         stage('TESTING2'){
             steps{
                 sh '''
-                     echo "This is a build stage"
+                     echo "This is a Testing2 stage"
                 '''
             }
 
