@@ -1,4 +1,12 @@
-pipeline{
+                  sleep 5
+                '''
+            }
+
+
+        }
+    }
+}
+[ec2-user@ip-172-31-25-133 Jenkins]$ vi Jenkinsfile1
     agent {'label slave1'}
     stages{
         stage('BUILD'){
@@ -8,7 +16,7 @@ pipeline{
                      pwd
                      ls
                      echo "This is a build stage"
-		     sleep 5
+                     sleep 5
                 '''
 
             }
@@ -19,25 +27,27 @@ pipeline{
                 echo "This is a Deploy stage"
                 sh 'sleep 5'
             }
-            
+
         }
         stage('TESTING1'){
             steps{
                 sh 'echo "This is a Testing1 stage"'
-		sh 'sleep 5'
+                sh 'sleep 5'
             }
 
-            
+
         }
         stage('TESTING2'){
             steps{
                 sh '''
                      echo "This is a Testing2 stage"
-		     sleep 5
+                     sleep 5
                 '''
             }
 
-            
+
         }
     }
 }
+~
+   
