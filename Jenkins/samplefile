@@ -4,13 +4,13 @@ pipeline {
         stage('Test') {
             when { branch "master" }
              steps {
-                    git branch: 'master', url: 'https://github.com/VEshwar2102/newpipeline-job.git'
+                    git branch: 'master', url: https://github.com/VEshwar2102/Eshwar-H1308.git'
                     sh '''
                         echo "This is a test1 stage"
                     ''' 
             }
              steps{
-                     git branch: 'master', url: 'https://github.com/VEshwar2102/newpipeline-job.git'
+                     git branch: 'master', url: 'https://github.com/VEshwar2102/Eshwar-H1308.git'
                     sh '''
                         echo "This is a test2 stage"
                     ''' 
