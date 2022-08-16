@@ -6,13 +6,13 @@ pipeline {
              steps {
                     git branch: 'master', url: https://github.com/VEshwar2102/Eshwar-H1308.git'
                     sh '''
-                        echo "This is a test1 stage"
+                        echo "This is a test1 stages"
                     ''' 
             }
              steps{
                      git branch: 'master', url: 'https://github.com/VEshwar2102/Eshwar-H1308.git'
                     sh '''
-                        echo "This is a test2 stage"
+                        echo "This is a test2 stages"
                     ''' 
             }
         }
